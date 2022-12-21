@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* generales */
+
+html, body, header, nav, main, footer, img {
+	width: 100%; /*100%*/
+	overflow-x: hidden;
+	font-family: 'DM Sans', sans-serif;
+}
+
+
+a {
+	color: #fff;
+}
+
+/* ----  */
+
+
+/* header */
+
+header {
+	height: 100px;
+	position: fixed;
+	z-index: 100;
+	background-color: #3b5a6f;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	header a {
+		margin: 0 27px;
+	}
+
+	header #nombre {
+		text-decoration: none;
+	}
+
+	header h1 {
+		font-size: 1rem;
+	}
+
+	header #email {
+		border: 2px solid #EBEAED;
+		border-radius: 100px;
+		padding: 9px 30px;
+	}
+
+	header #email:hover {
+		background-color: #16132C;
+		color: #ffff;
+		border-color: #292D3D;
+		transition: 200ms;
+	}
+
+/* ----- */
+
+
+/* main */
+
+
+main {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	min-height: 520px;
+	overflow-y: hidden;
+	background-color: #F1F1F1;
+}
+
+	/* section presentacion */ 
+
+	main #presentacion {
+		min-height: 520px;
+		padding: 60px 0;
+		display: flex;
+		flex-direction: column;
+		padding-left: 30px;
+	}
+
+		 #presentacion article {
+		 		width: 100%;
+				padding: 0 45px 0 10px;		
+			}
+
+		 #presentacion h2 {
+		 	color: #002054;
+		 	width: 100%;
+		 	font-size: 1.7rem;
+		 	font-weight: 700;
+		 	line-height: 35px;
+		 	margin-bottom: 24px;
+		 }
+
+		 #presentacion span {
+		 	font-size: 1.2rem;
+		 }
+
+		 #presentacion p {
+		 	width: 80%;
+		 	font-size: 0.9rem;
+		 	font-weight: 400;
+		 	line-height: 24px;
+		 	color: rgba(21, 20, 57, 0.6);
+		 }
+
+		 #presentacion img {
+		 	width: 75%;
+		 	height: 200px;
+		 	border-radius: 10px;
+		 	margin-top: 60px;
+		 	margin-bottom: 15px;
+		 }
+	/* ------ */
+
+	/* section destinos_container */
+
+	main #destinos_container {
+		min-height: 800px;
+		width: 600px;
+		display: flex;
+		flex-direction: column;
+	}
+
+		#destinos_container h2 {
+			color: #002054;
+		}
+
+		#destinos_container p {
+			color: rgba(21, 20, 57, 0.6);
+			width: 55%;	
+		}
+
+		#destinos_container #tituloDestinos {
+			line-height: 30px;
+			margin-left: 20px;
+			margin-bottom: 35px;
+		}
+
+		#destinos_container #tituloDestinos h2 {
+			width: 60%;
+			margin-bottom: 20px;
+			font-size: 1.6rem;
+			margin-top: 80px;
+		}
+
+		#destinos_container #destinos {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			width: 100%;
+			justify-content: space-between;		
+		}
+
+		#destinos_container #destinos div {
+			width: 300px;
+			margin: 13px 249px 70px 30px;
+		}
+
+		#destinos_container #destinos h2 { 
+			font-size: 1.2rem;
+			margin-bottom: 16px;
+		}
+	/* -------- */
+
+	/* section hospedaje_container */
+	main #hospedaje_container {
+		background-color: #ccd7dd;
+		min-height: 800px;
+		padding: 90px 50px;
+	}
+
+		#hospedaje_container #hospedajes_text p {
+			font-size: 1rem;
+		}
+		#hospedaje_container div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			color: #002054;
+		}
+
+
+		#hospedaje_container div h2 {
+			font-size: 1.6rem;
+			margin-bottom: 20px;
+		}
+
+
+		#hospedaje_container div p {
+			font-size: 1rem;
+			margin-bottom: 55px;
+			color: rgba(21, 20, 57, 0.6);
+		}
+
+
+		#hospedaje_container #contactoBoton {
+			background-color: #549B7F;
+			color: #ffff;
+			width: 200px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			border-radius: 100px;
+			margin: auto;
+		}
+
+		#hospedaje_container #contactoBoton:hover {
+			background-color: #56C932;
+			color: #405187;
+			transition: 200ms;
+		} 
+
+
+		#hospedaje_container article {
+			opacity: 0;
+			z-index: -1;
+			width: 100%;
+			padding-top: 0;
+			margin: 90px 0 90px 0;
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+		}
+
+
+		#hospedaje_container article a {
+			text-decoration: none;
+		}
+
+
+		#hospedaje_container article a:hover {
+			border-radius: 10px;
+			background-color: #F8F8F8;
+			transition: 200ms;
+		}
+
+
+
+		#hospedaje_container .desplegables {
+			border-bottom: 1px solid #1E0E62;
+		}
+
+		#hospedaje_container input {
+			display: none;
+		}
+
+		#hospedaje_container label {
+			font-size: 1.5rem;
+			color: #3F3F64;
+			cursor: pointer;
+			display: flex;
+
+
+			margin: 100px 0 40px 0;
+		}
+
+		#hospedaje_container label span {
+			color: #271E6E;		
+		}
+
+
+		#checkbox_mendoza:checked ~ #destinoMendoza,
+		#checkbox_bariloche:checked ~ #destinoBariloche,
+		#checkbox_tierradf:checked ~ #destinoTierradf {
+			opacity: 1;
+			transform: translateY(0%);
+			z-index: 2;
+			position: relative;
+			transition: 500ms;
+		}
+
+
+
+
+		#hospedaje_container img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		#hospedaje_container article a h2 {
+			font-size: 1.1rem;
+			color: #002054;
+		}
+
+		#hospedaje_container a p {
+			color: rgba(21, 20, 57, 0.6);
+			font-size: 0.8rem;
+			line-height: 24px;
+			padding-right: 16px;
+			margin-bottom: 40px;
+		}
+
+	/* --------- */
+
+
+/* footer */
+
+footer {
+	height: 330px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+}
+
+	footer section {
+		height: 150px;
+		display: block;
+		text-align: center;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #002054;
+		line-height: 60px;
+		font-family: 'DM Sans';
+	}
+
+	footer section h2 {
+		font-size: 1.3rem;
+	}
+
+	footer section span {
+		color: #3b5a6f;
+		font-size: 1rem;
+	}
+
+	footer div {
+		height: 32px;
+		width: 350px;
+
+		text-align: center;
+	}
+
+	footer div a {
+		text-decoration: none;
+		color: #3b5a6f;
+		font-size: 1.4rem;
+		padding: 20px;
+	}
+
+	footer div a:hover {
+		color: #3E2865;
+		transition: 200ms;
+	}
+
+/* -----  fin mobile design -----*/
+
+
+					/* MEDIA QUERIES */
+
+/*  --> Tablet */
+@media screen and (min-width: 768px) {
+	
+	/* main */
+
+	main #presentacion {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#presentacion p {
+		width: 90%;
+	}
+
+	#presentacion img {
+		width: 100%;
+		height: 300px;
+		margin-right: 30px;
+	}
+
+	#hospedaje_container article {
+		width: 50%;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	#destinos_container {
+		margin: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	#destinos_container #destinos div{
+		margin: 50px auto;
+	}
+
+
+	main #tituloDestinos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	main #destinos_container div {
+		display: flex;
+		flex-direction: column;
+
+		text-align: center;
+		align-items: center;
+	}
+
+	/* footer */
+
+	footer section h2 {
+		font-size: 1.3rem;
+	}
+
+
+	footer section span {
+		font-size: 1rem;
+	}
+}
+
+
+/*  --> Desktop */
+@media screen and (min-width: 1200px) {
+	header {
+		height: 100px;
+		width: 100%;
+	}
+
+
+/* main */
+
+
+main {
+	position: relative;
+	top: 100px;
+	min-height: 520px;
+	background-color: #F1F1F1;
+}
+
+	/* section presentacion */ 
+
+	main #presentacion {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+		 #presentacion article {
+				width: 422px;
+				height: 520px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				margin-left: 115px;
+				margin-right: 177px;		
+			}
+
+		 #presentacion h2 {
+		 	width: 100%;
+		 	color: #1E0E62;
+		 	font-size: 2rem;
+		 	font-weight: 700;
+		 	line-height: 60px;
+		 	margin-bottom: 24px;
+		 }
+
+		 #presentacion p {
+		 	width: 80%;
+		 	font-size: 1rem;
+		 	font-weight: 400;
+		 	line-height: 26px;
+		 	color: rgba(21, 20, 57, 0.4);;
+		 }
+
+		 #presentacion img {
+		 	width: 28rem;
+		 	height: 350px;
+		 	margin-top: 55px;
+		 	margin-bottom: 15px;
+		 	margin-right: 115px;
+		 }
+	/* ------ */
+
+	/* section destinos_container */
+
+	main #destinos_container {
+		min-height: 699px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+
+		#destinos_container h2 {
+			color: #1E0E62;
+		}
+
+		#destinos_container p {
+			color: rgba(21, 20, 57, 0.4);	
+			width: 100%;
+		}
+
+		#destinos_container #tituloDestinos {
+			line-height: 40px;
+		}
+
+		#destinos_container #tituloDestinos h2 {
+			font-size: 42px;
+			margin-top: 80px;
+			width: 100%;
+		}
+
+		#destinos_container #destinos {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			width: 100vw;
+			justify-content: center;		
+		}
+
+		#destinos_container #destinos div {
+			margin: 95px 75px 221px 80px;
+		}
+
+		#destinos_container #destinos h2 { 
+			margin-bottom: 24px;
+		}
+	/* -------- */
+
+	/* section hospedaje_container */
+	main #hospedaje_container {
+		background-color: #ffff;
+		min-height: 800px;
+		width: 100%;
+		padding: 100px 115px;
+	}
+		#hospedaje_container div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			color: #1E0E62;
+		}
+
+
+		#hospedaje_container div h2 {
+			font-size: 42px;
+			margin-bottom: 20px;
+		}
+
+
+		#hospedaje_container div p {
+			font-size: 22px;
+			margin-bottom: 55px;
+			color: rgba(21, 20, 57, 0.4);
+		}
+
+
+		#hospedaje_container #contactoBoton {
+			background-color: #549B7F;
+			color: #ffff;
+			width: 200px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			border-radius: 100px;
+			margin: auto;
+		}
+
+		#hospedaje_container #contactoBoton:hover {
+			background-color: #56C932;
+			color: #405187;
+			transition: 200ms;
+		} 
+
+		#hospedaje_container .desplegables {
+			border-bottom: 1px solid #1E0E62;
+		}
+
+		#hospedaje_container input {
+			display: none;
+		}
+
+		#hospedaje_container label {
+			font-size: 1.5rem;
+			color: #3F3F64;
+			cursor: pointer;
+			display: flex;
+
+			margin-bottom: 100px;
+		}
+
+		#hospedaje_container label span {
+			color: #271E6E;		
+		}
+
+		#hospedaje_container article {
+			opacity: 0;
+			z-index: -1;
+			width: 100%;
+			padding-top: 0;
+			margin: 90px 0 90px 0;
+			position: absolute;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		#checkbox_mendoza:checked ~ #destinoMendoza,
+		#checkbox_bariloche:checked ~ #destinoBariloche,
+		#checkbox_tierradf:checked ~ #destinoTierradf {
+			opacity: 1;
+			transform: translateY(0%);
+			z-index: 2;
+			position: relative;
+			transition: 500ms;
+		}
+
+		#hospedaje_container article a {
+			text-decoration: none;
+			display: block;
+			padding: 0 30px;
+		}
+
+
+		#hospedaje_container article a:hover {
+			border-radius: 10px;
+			position: relative;
+			transform: translateY(-10px);
+			background-color: #F8F8F8;
+			transition: 300ms;
+		}
+
+		#hospedaje_container img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		#hospedaje_container a p {
+			color: rgba(21, 20, 57, 0.4);
+			font-size: 16px;
+			line-height: 24px;
+			padding-right: 16px;
+		}
+
+	/* --------- */
+
+
+/* footer */
+
+footer {
+	min-height: 500px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+}
+
+	footer section {
+		height: 160px;
+		display: block;
+
+		text-align: center;
+		font-weight: 700;
+		color: #002054;
+		line-height: 80px;
+		font-family: 'DM Sans';
+	}
+
+	footer section h2 {
+
+		font-size: 1.8rem;
+	}
+
+	footer section span {
+		color: #3b5a6f;
+		font-size: 1.6rem;
+	}
+
+	footer div {
+		height: 32px;
+		width: 500px;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	footer div a {
+		text-decoration: none;
+		color: #3b5a6f;
+		font-size: 2rem;
+		padding: 20px;
+	}
+
+	footer div a:hover {
+		color: #3E2865;
+		transition: 200ms;
+	}
+}
+
+

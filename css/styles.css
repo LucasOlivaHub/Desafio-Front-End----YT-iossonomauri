@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* generales */
+
+html, body, header, nav, main, footer, img {
+	width: 100%; /*100%*/
+	overflow-x: hidden;
+	font-family: 'DM Sans', sans-serif;
+}
+
+a {
+	color: #1E0E62;
+}
+
+/* ----  */
+
+
+/* header */
+
+header {
+	height: 100px;
+	position: fixed;
+	z-index: 1;
+	background-color: #ffff;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	header a {
+		margin: 0 27px;
+	}
+
+	header h1 {
+		font-size: 1rem;
+	}
+
+	header #email {
+		border: 2px solid #EBEAED;
+		border-radius: 100px;
+		padding: 9px 30px;
+	}
+
+	header #email:hover {
+		background-color: #3E2865;
+		color: #ffff;
+		border-color: #4F3570;
+		transition: 200ms;
+	}
+
+/* ----- */
+
+
+/* main */
+
+
+main {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	min-height: 520px;
+	background-color: #F1F1F1;
+}
+
+	/* section presentacion */ 
+
+	main #presentacion {
+		min-height: 520px;
+		padding: 60px 0;
+		display: flex;
+		flex-direction: column;
+		padding-left: 30px;
+	}
+
+		 #presentacion article {
+		 		width: 100%;
+				padding: 0 45px 0 10px;		
+			}
+
+		 #presentacion h2 {
+		 	color: #1E0E62;
+		 	width: 100%;
+		 	font-size: 1.7rem;
+		 	font-weight: 700;
+		 	line-height: 40px;
+		 	margin-bottom: 24px;
+		 }
+
+		 #presentacion p {
+		 	width: 80%;
+		 	font-size: 0.9rem;
+		 	font-weight: 400;
+		 	line-height: 24px;
+		 	color: rgba(21, 20, 57, 0.4);;
+		 }
+
+		 #presentacion img {
+		 	width: 75%;
+		 	height: 200px;
+		 	margin-top: 60px;
+		 	margin-bottom: 15px;
+		 }
+	/* ------ */
+
+	/* section habilidades */
+
+	main #habilidades {
+		min-height: 800px;
+		width: 600px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+		#habilidades h2 {
+			color: #1E0E62;
+		}
+
+		#habilidades p {
+			color: rgba(21, 20, 57, 0.4);	
+		}
+
+		#habilidades #tituloHabilidades {
+			line-height: 40px;
+			margin-left: 20px;
+			margin-bottom: 32px;
+		}
+
+		#habilidades #tituloHabilidades h2 {
+			font-size: 1.6rem;
+			margin-top: 80px;
+		}
+
+		#habilidades #lenguajes {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			width: 100%;
+			justify-content: space-between;		
+		}
+
+		#habilidades #lenguajes div {
+			width: 300px;
+			margin: 13px 249px 70px 30px;
+		}
+
+		#habilidades #lenguajes h2 { 
+			font-size: 1.2rem;
+			margin-bottom: 16px;
+		}
+	/* -------- */
+
+	/* section proyectos */
+	main #proyectos {
+		background-color: #ffff;
+		min-height: 800px;
+		padding: 90px 50px;
+	}
+		#proyectos div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			color: #1E0E62;
+		}
+
+
+		#proyectos div h2 {
+			font-size: 1.6rem;
+			margin-bottom: 20px;
+		}
+
+
+		#proyectos div p {
+			font-size: 1rem;
+			margin-bottom: 55px;
+			color: rgba(21, 20, 57, 0.4);
+		}
+
+
+		#proyectos #contactoBoton {
+			background-color: #549B7F;
+			color: #ffff;
+			width: 200px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			border-radius: 100px;
+			margin: auto;
+		}
+
+		#proyectos #contactoBoton:hover {
+			background-color: #56C932;
+			color: #405187;
+			transition: 200ms;
+		} 
+
+		#proyectos article {
+			width: 80%;
+			margin: auto;
+			margin-top: 90px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#proyectos article a {
+			text-decoration: none;
+		}
+
+
+		#proyectos article a:hover {
+			border-radius: 10px;
+			background-color: #F8F8F8;
+			transition: 200ms;
+		}
+
+		#proyectos img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		#proyectos article a h2 {
+			font-size: 1.1rem;
+		}
+
+		#proyectos a p {
+			color: rgba(21, 20, 57, 0.4);
+			font-size: 0.8rem;
+			line-height: 24px;
+			padding-right: 16px;
+			margin-bottom: 40px;
+		}
+
+	/* --------- */
+
+
+/* footer */
+
+footer {
+	height: 330px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+}
+
+	footer section {
+		height: 150px;
+		display: block;
+		text-align: center;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #1E0E62;
+		line-height: 60px;
+		font-family: 'DM Sans';
+	}
+
+	footer section span {
+		color: #482BE7;
+		font-size: 1.1rem;
+	}
+
+	footer div {
+		height: 32px;
+		width: 350px;
+
+		text-align: center;
+	}
+
+	footer div a {
+		text-decoration: none;
+		color: #9999A7;
+		font-size: 1.4rem;
+		padding: 20px;
+	}
+
+	footer div a:hover {
+		color: #3E2865;
+		transition: 200ms;
+	}
+
+/* -----  fin mobile design -----*/
+
+
+					/* MEDIA QUERIES */
+
+/*  --> Tablet */
+@media screen and (min-width: 768px) {
+	
+	/* main */
+
+	main #presentacion {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#presentacion p {
+		width: 90%;
+	}
+
+	#presentacion img {
+		width: 100%;
+		height: 300px;
+		margin-right: 30px;
+	}
+
+	#proyectos article {
+		width: 50%;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	#habilidades {
+		margin: auto;
+		text-align: center;
+		align-items: center;
+	}
+
+	#habilidades #lenguajes div{
+		margin: 50px auto;
+	}
+
+	/* footer */
+
+	footer section span {
+		font-size: 1.5rem;
+	}
+}
+
+
+/*  --> Desktop */
+@media screen and (min-width: 1200px) {
+	header {
+		height: 100px;
+		width: 100%;
+	}
+
+	header #email {
+		border: 2px solid #EBEAED;
+		border-radius: 100px;
+		padding: 9px 30px;
+	}
+
+	header #email:hover {
+		background-color: #3E2865;
+		color: #ffff;
+		border-color: #4F3570;
+		transition: 200ms;
+	}
+
+
+/* main */
+
+
+main {
+	position: relative;
+	top: 100px;
+	min-height: 520px;
+	background-color: #F1F1F1;
+}
+
+	/* section presentacion */ 
+
+	main #presentacion {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+		 #presentacion article {
+				width: 422px;
+				height: 520px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				margin-left: 115px;
+				margin-right: 177px;		
+			}
+
+		 #presentacion h2 {
+		 	width: 100%;
+		 	color: #1E0E62;
+		 	font-size: 2rem;
+		 	font-weight: 700;
+		 	line-height: 60px;
+		 	margin-bottom: 24px;
+		 }
+
+		 #presentacion p {
+		 	width: 80%;
+		 	font-size: 1rem;
+		 	font-weight: 400;
+		 	line-height: 26px;
+		 	color: rgba(21, 20, 57, 0.4);;
+		 }
+
+		 #presentacion img {
+		 	width: 28rem;
+		 	height: 350px;
+		 	margin-top: 55px;
+		 	margin-bottom: 15px;
+		 	margin-right: 115px;
+		 }
+	/* ------ */
+
+	/* section habilidades */
+
+	main #habilidades {
+		height: 699px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		#habilidades h2 {
+			color: #1E0E62;
+		}
+
+		#habilidades p {
+			color: rgba(21, 20, 57, 0.4);	
+		}
+
+		#habilidades #tituloHabilidades {
+			line-height: 40px;
+		}
+
+		#habilidades #tituloHabilidades h2 {
+			font-size: 42px;
+			margin-top: 80px;
+		}
+
+		#habilidades #lenguajes {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			width: 100vw;
+			justify-content: center;		
+		}
+
+		#habilidades #lenguajes div {
+			margin: 95px 75px 221px 80px;
+		}
+
+		#habilidades #lenguajes h2 { 
+			margin-bottom: 24px;
+		}
+	/* -------- */
+
+	/* section proyectos */
+	main #proyectos {
+		background-color: #ffff;
+		min-height: 800px;
+		width: 100%;
+		padding: 100px 115px;
+	}
+		#proyectos div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			color: #1E0E62;
+		}
+
+
+		#proyectos div h2 {
+			font-size: 42px;
+			margin-bottom: 20px;
+		}
+
+
+		#proyectos div p {
+			font-size: 22px;
+			margin-bottom: 55px;
+			color: rgba(21, 20, 57, 0.4);
+		}
+
+
+		#proyectos #contactoBoton {
+			background-color: #549B7F;
+			color: #ffff;
+			width: 200px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			border-radius: 100px;
+			margin: auto;
+		}
+
+		#proyectos #contactoBoton:hover {
+			background-color: #56C932;
+			color: #405187;
+			transition: 200ms;
+		} 
+
+		#proyectos article {
+			width: 100%;
+			padding-top: 0;
+			margin-top: 90px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		#proyectos article a {
+			text-decoration: none;
+			display: block;
+			padding: 0 30px;
+		}
+
+
+		#proyectos article a:hover {
+			border-radius: 10px;
+			position: relative;
+			transform: translateY(-10px);
+			background-color: #F8F8F8;
+			transition: 300ms;
+		}
+
+		#proyectos img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		#proyectos a p {
+			color: rgba(21, 20, 57, 0.4);
+			font-size: 16px;
+			line-height: 24px;
+			padding-right: 16px;
+		}
+
+	/* --------- */
+
+
+/* footer */
+
+footer {
+	min-height: 500px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+}
+
+	footer section {
+		height: 160px;
+		display: block;
+
+		text-align: center;
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: #1E0E62;
+		line-height: 80px;
+		font-family: 'DM Sans';
+	}
+
+	footer section span {
+		color: #482BE7;
+	}
+
+	footer div {
+		height: 32px;
+		width: 500px;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	footer div a {
+		text-decoration: none;
+		color: #9999A7;
+		font-size: 2rem;
+		padding: 30px;
+	}
+
+	footer div a:hover {
+		color: #3E2865;
+		transition: 200ms;
+	}
+}
+
+
